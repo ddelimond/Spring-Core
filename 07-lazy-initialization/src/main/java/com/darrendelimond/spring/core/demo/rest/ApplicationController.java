@@ -13,8 +13,9 @@ public class ApplicationController {
     private Coach myCoach;
 
     @Autowired
-    public ApplicationController( @Qualifier("basketballCoach") Coach theCoach){
+    public ApplicationController( @Qualifier("basketballCoach")Coach theCoach) {
         this.myCoach = theCoach;
+        System.out.println("Initializing: "+ this.getClass().getSimpleName());
     }
 
 
