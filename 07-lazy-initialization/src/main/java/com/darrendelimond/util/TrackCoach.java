@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import javax.sound.midi.Track;
 
 @Component
-@Lazy
+
 public class TrackCoach implements Coach{
 
    public  TrackCoach(){
